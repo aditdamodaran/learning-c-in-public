@@ -109,7 +109,7 @@ Buuuuut, what if we did want to do this in another function? This is where C is 
 
 > “This approach simulates call-by-reference (also known as pass-by-reference) by generating object addresses, passing those by value, and then dereferencing the copied addresses to access the original objects.”
 
-First we need to modify our function call. We don’t want to pass the values of the objects “a” and “b”, **but rather pointers to these objects**.
+First we need to modify our function call. We don’t want to pass the values of the objects “a” and “b”, **but rather pointers to these objects**. We can generate pointers using `&`.
 
 ```
 int main(void) {
@@ -122,7 +122,7 @@ int main(void) {
 
 ```
 
-> The unary “&” is the address-of operator, which generates a pointer to its operand. This change is necessary because the swap function now accepts pointers to objects of type int as parameters instead of simply values of type int
+> The unary “&” is the address-of operator, which generates a pointer to its operand. **This change is necessary because the swap function now accepts pointers to objects of type int as parameters instead of simply values of type int**
 
 Then we should adjust *our parameters* in the swap function from values to pointers.
 
@@ -225,6 +225,9 @@ Results in:
 > main pre-swap: a: 21, b: 17
 
 > main post-swap: a: 17, b: 21
+
+[Great recap here going over the nuances.](https://youtu.be/rtgwvkaYt1A).
+
 
 
 
