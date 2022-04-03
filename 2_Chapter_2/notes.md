@@ -29,8 +29,26 @@ Because objects and functions are different things, object pointers and function
 
 ---
 
+```
+int a = 1 
+```
+``"a"`` is an integer object of value 1
+
 ![alt text](images/img_1.png "Img 1")
 
+```
+int *a 
+```
+``Pointer to "a"`` ⇒ A Pointer to ``a`` in Memory
+
+![alt text](images/img_2.png "Img 2")
+
+```
+&a
+```
+“``The Address of "a"``” ⇒ Where ``“a”`` *lives* in Memory
+
+![alt text](images/img_3.png "Img 3")
 
 
 
